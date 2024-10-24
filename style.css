@@ -1,0 +1,508 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(250, 250, 247);
+}
+#main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-top: 1px;
+    
+}
+#nav{
+
+    height: 12vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+   
+}
+#nav h4{
+    
+    height: 100%;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-right: 2px solid black;
+    
+}
+#nav h2{
+    padding-left: 10px;
+    height: 100%;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    
+}
+#nav h4:nth-last-child(1){
+    width: 10%;
+}
+#nav h4:nth-last-child(2){
+    width: 25%;
+}
+#page1{
+    height: 85%;
+    position: relative;
+    padding: 50px 50px;
+}
+#content{
+height: 100%;
+width: 100%;
+position: relative;
+}
+#content video{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+#overlay{
+    bottom: 0;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+}
+#over1{
+    padding: 3vw;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+#over1 h1{
+    font-size: 3.5vw;
+    font-weight: 900;
+    font-family: monument;
+}
+#over1 h2{
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+#over2{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw;
+    color: white;
+    border-top: 2px solid white;
+}
+#scroll{
+    height: 40%;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll img{
+    height: 80%;
+    width: 15%;
+    border-radius: 50%;
+    margin: 1vw;
+    object-fit:cover;
+    position: top; 
+}
+
+#contain{
+    height: 100%;
+    width: 105%;
+    display: inline-block;
+    padding: 1.5vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#scroll::-webkit-scrollbar{
+    display: none;
+}
+#mark{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#mark h6{
+    padding: 1vw;
+    font-style: italic;
+}
+#mark h5{
+    border-bottom: 2px solid black;
+    font-size: 18px;
+    margin-right: 10px;
+    font-style: italic;
+}
+#mark h6:hover{
+    border: 2px solid black;
+    border-radius: 50%;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+#left{
+    height: 100%;
+    width: 50%;
+    padding: 3vw 2vw;
+}
+#left img{
+    height: 80%;
+    width: 100%;
+    object-position: center ;
+    object-fit:cover ;
+    margin-bottom: 20px;
+}
+#left h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 3vw;
+}
+#right{
+    height: 60%;
+    width: 45%;
+    padding:40px 15px ;
+}
+#right img{
+    height: 100%;
+    width: 100%;
+    object-position: center ;
+    object-fit:cover ;
+    margin-bottom: 40px;
+}
+#right-bottom{
+  display: flex;
+}
+#right-bottom h4{
+    font-weight: 500;
+}
+#right-bottom h2{
+    width: 45%;
+    
+}
+#page3{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+#le{
+    height: 100%;
+    width: 45%;
+}
+#ri{
+    height: 100%;
+    width: 55%;
+    background-color: pink;
+}
+#photu{
+    padding: 1.5vw;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#photu img{
+    height: 55vh;
+    opacity: .5;
+}
+#ri img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#text{
+    margin-left: 50px;
+}
+#page4{
+    padding: 3vw;
+    height: 100%;
+    width: 100%;
+}
+#page4>h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 6vh;
+    font-family: monument;
+    font-weight: 900;
+    margin-bottom: 8vh;
+}
+.elem{
+    position: relative;
+    height: 15vh;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+#page4>:nth-child(2){
+    border-top: 2px solid black;
+}
+#elem2{
+    width: 40%;
+}
+.elem img{
+position: absolute;
+height: 100px;
+width: 100px;
+border-radius: 50%;
+object-fit: cover;
+opacity: 0;
+left: 10%;
+transition: all ease .8s;
+}
+.elem:hover img{
+    opacity: 1;
+    left: 30%;
+}
+#marque{
+    height: 13vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    display: inline-block;
+    
+}
+#marque h2{
+    padding: 1.5vw;
+    display: inline-block;
+    font-size: 3vw;
+    color: transparent; /* Make text itself invisible */
+    -webkit-text-stroke-width: 1px; /* Set stroke width */
+    -webkit-text-stroke-color: black; /* Set stroke color */
+    font-size: 40px;
+    font-weight: 900;
+    font-family: monument;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 4px));
+    }
+}
+@media (max-width:600px) {
+    #nav{
+        height: 8vh;
+        margin-top: 20px;
+    }
+    #nav h4{ 
+        display: none;  
+    }
+    #nav h2{
+        margin-left: 55px;
+        padding: 1.5vw;
+        font-size: 3vh;  
+    }
+    #page1{
+        height: 60%;
+        padding: 30px 30px;
+    }
+    #overlay{
+        height: fit-content;
+    }
+    #over1{
+        padding: 1.6vw; 
+    }
+    #over1 h1{
+        font-size: 4vw;
+        font-weight: 500;
+
+    }
+    #over1 h2{
+        padding: 5px;
+    }
+    #over2{
+        font-size: 15px;
+        padding: 2vw;
+    }
+    #scroll{
+        height: 12%;
+        width: 100%;
+        
+    }
+    #scroll img{
+        height: 60%;
+        width: 11.6%;
+        margin: .9vw;
+    }
+    #mark{
+        height: 3.5vh;
+        gap: 3px;
+        margin-bottom: 15px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    #mark h6{
+        padding: 0px;
+
+    }
+    #mark h5{
+
+        font-size: 15px;
+        margin-right: 20px;
+      
+    }
+    #mark h6:hover{
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+    #page2{
+        height: 60%;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    #left{
+        height: 100%;
+        width: 35%;
+        padding: 1.5vw 1vw;
+        margin-left: 15px;
+    }
+    #left img{
+        height: 80%;
+        width: 100%;
+        object-position: center ;
+        object-fit:cover ;
+        margin-bottom: 15px;
+    }
+    #left h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 900;
+        font-size: 3vw;
+    }
+    #right{
+        height: 45%;
+        width: 62%;
+        padding:20px 1px ;
+    }
+    #right img{
+        height: 100%;
+        width: 100%;
+        object-position: center ;
+        object-fit:cover ;
+        margin-bottom: 40px;
+    }
+    #right-bottom{
+      display: flex;
+    }
+    #right-bottom h4{
+        width: 40%;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    #right-bottom h2{
+        font-size: 2vh;
+        width: 45%;
+        
+    }
+    #page3{
+        height: 50%;
+        margin-bottom: 5px;
+    }
+    #le{
+        height: 80%;
+        width: 45%;
+    }
+    #ri{
+        height: 80%;
+        width: 55%;
+    }
+    #photu{
+        padding: 1vw;
+        height: 60%;
+    }
+    #photu img{
+        height: 12vh;
+        opacity: 1;
+    }
+    #text{
+        font-size: 10px;
+        margin-left: 25px;
+    }
+    #page4{
+        padding: 3vw;
+        height: fit-content;
+        width: 100%;
+    }
+    #page4>h1{
+        font-size: 3.5vh;
+        margin-bottom: 6vh;
+    }
+    .elem{
+        position: relative;
+        height: 10vh;
+        padding: 10px;
+    }
+    #elem2{
+        font-size: 10px;
+        width: 30%;
+    }
+    .elem img{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: 8%;
+    }
+    .elem:hover img{
+        opacity: 1;
+        left: 45%;
+    }
+    #marque{
+        height: 5vh;
+        margin-top: 15px;
+    }
+    #marque h2{
+       
+        padding: 1vw;
+       
+        font-size: 20px;
+    
+    
+    }
+
+}
